@@ -1,6 +1,7 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import type { Iplayer } from './playerType';
 import AvailablePlayers from './AvailablePlayers';
+import SelectedPlayers from './SelectedPlayers';
  export interface PlayersProps { 
   playersPromise:Promise<Iplayer[]>
 }
@@ -8,18 +9,28 @@ import AvailablePlayers from './AvailablePlayers';
 const Playaers = ({playersPromise}:PlayersProps) => { 
   // console.log(playersPromise); 
   const players = use(playersPromise);
-  // console.log(players.s ,'players')
+  // console.log(players.s ,'players')  
+  const [buttonType, setButtonType] = useState('available');
+  //  console.log(test,'test is a best');
+   const handleUpdateBtnType = (type : 'available' | 'selected') => { 
+    setButtonType(type);
+   }
+
   return (
     
     <div  className='container mx-auto'>   
       <div className='flex justify-between gap-4 my-4'> 
-             <h2 className='font-bold text-xl'>Available Players</h2>
+             <h2 className='font-bold text-xl'>{buttonType === 'available'? 'Available Players' : 'Selected Players'}</h2>
              <div> 
-              <button className='btn btn-success'>Available</button>
-             <button className='btn btn-primary'>Selected </button>
+              <button  
+              onClick={()=>handleUpdateBtnType('available')}
+               className={`btn  ${buttonType === 'available' ? 'btn-success' : ''} rounded-r-none`}>Available</button>
+             <button 
+             onClick={()=>handleUpdateBtnType('selected') }
+              className={`btn ${buttonType === 'selected' ? 'btn-success' :''} rounded-l-none`}>Selected </button>
              </div>
             </div> 
-      <AvailablePlayers players={players}/>
+      { buttonType === 'available' ?  (<AvailablePlayers players={players} />) : <SelectedPlayers/> }
       
     </div>
   );

@@ -37,7 +37,7 @@
 // };
 
 // export default PlayerCard;  
-import React from 'react';
+import React, { useState } from 'react';
 import { FaFlag, FaUser, FaStar, FaArrowRight } from 'react-icons/fa';
 import type { Iplayer } from './playerType';
 
@@ -45,7 +45,9 @@ interface PlayerCardProps {
   player: Iplayer;
 }
 
-const PlayerCard = ({ player }: PlayerCardProps) => {
+const PlayerCard = ({ player }: PlayerCardProps) => {   
+  const [isSelected , setIsSelected ] = useState(false);
+  console.log(isSelected,setIsSelected,'isSelected' , 'setSelected');
   return (
     <article className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl">
 
