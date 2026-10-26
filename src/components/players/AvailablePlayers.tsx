@@ -1,22 +1,17 @@
-import React from 'react';
+// import React from 'react';
 import type { Iplayer } from './playerType';
+// import { FaFlag, FaUser } from 'react-icons/fa';
+import PlayerCard from './PlayerCard';
+// import type { PlayersProps } from './Playaers';
 
 const AvailablePlayers = ({players}) => { 
   // console.log(players , 'a');
   return (
-    <div className='container mx-auto'>  
-     <div className='flex justify-between gap-4'> 
-       <h2 className='font-bold text-xl'>Available Players</h2>
-       <div> 
-        <button className='btn btn-success'>Available</button>
-       <button className='btn btn-primary'>Selected </button>
-       </div>
-      </div> 
+    <div className='grid grid-cols-3 gap-4 mt-6'>  
+     
       {    
-        players.map((player:Iplayer)=>{ 
-          return <div> 
-            {player.playerName}
-          </div>
+        players.map((player:Iplayer, ind:number)=>{  
+         return<PlayerCard key={ind} player={player}/>
         })
       }
       
@@ -24,4 +19,12 @@ const AvailablePlayers = ({players}) => {
   );
 };
 
-export default AvailablePlayers;
+export default AvailablePlayers; 
+
+
+
+
+
+   
+
+        
