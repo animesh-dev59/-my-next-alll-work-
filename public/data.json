@@ -1,0 +1,92 @@
+[
+  {
+    "playerName": "Virat Kohli",
+    "playerImg": "https://example.com/images/virat_kohli.jpg",
+    "origin": "India",
+    "playerType": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 900
+  },
+  {
+    "playerName": "Shakib Al Hasan",
+    "playerImg": "https://example.com/images/shakib_al_hasan.jpg",
+    "origin": "Bangladesh",
+    "playerType": "All-rounder",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Slow left-arm orthodox",
+    "price": 200
+  },
+  {
+    "playerName": "Babar Azam",
+    "playerImg": "https://example.com/images/babar_azam.jpg",
+    "origin": "Pakistan",
+    "playerType": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 500
+  },
+  {
+    "playerName": "Ben Stokes",
+    "playerImg": "https://example.com/images/ben_stokes.jpg",
+    "origin": "England",
+    "playerType": "All-rounder",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm fast-medium",
+    "price": 800
+  },
+  {
+    "playerName": "Rashid Khan",
+    "playerImg": "https://example.com/images/rashid_khan.jpg",
+    "origin": "Afghanistan",
+    "playerType": "Bowler",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm legbreak",
+    "price": 900
+  },
+  {
+    "playerName": "Jasprit Bumrah",
+    "playerImg": "https://example.com/images/jasprit_bumrah.jpg",
+    "origin": "India",
+    "playerType": "Bowler",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 500
+  },
+  {
+    "playerName": "Steve Smith",
+    "playerImg": "https://example.com/images/steve_smith.jpg",
+    "origin": "Australia",
+    "playerType": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm legbreak",
+    "price": 500
+  },
+  {
+    "playerName": "Mustafizur Rahman",
+    "playerImg": "https://example.com/images/mustafizur_rahman.jpg",
+    "origin": "Bangladesh",
+    "playerType": "Bowler",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm fast-medium",
+    "price": 400
+  },
+  {
+    "playerName": "Kane Williamson",
+    "playerImg": "https://example.com/images/kane_williamson.jpg",
+    "origin": "New Zealand",
+    "playerType": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 700
+  },
+  {
+    "playerName": "Kagiso Rabada",
+    "playerImg": "https://example.com/images/kagiso_rabada.jpg",
+    "origin": "South Africa",
+    "playerType": "Bowler",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 300
+  }
+]
