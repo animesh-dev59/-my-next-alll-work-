@@ -1,16 +1,19 @@
-import React, { use, useState } from 'react';
+import React, { use, useState, type Dispatch, type SetStateAction } from 'react';
 import type { Iplayer } from './playerType';
 import AvailablePlayers from './AvailablePlayers';
 import SelectedPlayers from './SelectedPlayers';
  export interface PlayersProps { 
-  playersPromise:Promise<Iplayer[]>
+  playersPromise:Promise<Iplayer[]> 
+  coin:number; 
+  setCoin:Dispatch<SetStateAction<number>>
 }
 
-const Playaers = ({playersPromise}:PlayersProps) => { 
+const Playaers = ({playersPromise , coin , setCoin}:PlayersProps) => { 
   // console.log(playersPromise); 
   const players = use(playersPromise);
   // console.log(players.s ,'players')  
   const [buttonType, setButtonType] = useState('available');
+   const [selectedPlayers , setSelectedPlayers] = useState<Iplayer[]>([]);;
   //  console.log(test,'test is a best');
    const handleUpdateBtnType = (type : 'available' | 'selected') => { 
     setButtonType(type);
@@ -30,7 +33,7 @@ const Playaers = ({playersPromise}:PlayersProps) => {
               className={`btn ${buttonType === 'selected' ? 'btn-success' :''} rounded-l-none`}>Selected </button>
              </div>
             </div> 
-      { buttonType === 'available' ?  (<AvailablePlayers players={players} />) : <SelectedPlayers/> }
+      { buttonType === 'available' ?  (<AvailablePlayers players={players} coin={coin} setCoin={setCoin} selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} />) : <SelectedPlayers selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers}/> }
       
     </div>
   );

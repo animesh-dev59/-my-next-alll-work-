@@ -37,17 +37,50 @@
 // };
 
 // export default PlayerCard;  
-import React, { useState } from 'react';
+import React, { useState, type Dispatch, type SetStateAction } from 'react';
 import { FaFlag, FaUser, FaStar, FaArrowRight } from 'react-icons/fa';
 import type { Iplayer } from './playerType';
+import { Bounce, toast } from 'react-toastify';
+import Playaers from './Playaers';
 
 interface PlayerCardProps {
   player: Iplayer;
+    coin:number;
+     setCoin:Dispatch<SetStateAction<number>>;
+     selectedPlayers:Iplayer[];
+   setSelectedPlayers:Dispatch<SetStateAction<Iplayer[]>>
 }
 
-const PlayerCard = ({ player }: PlayerCardProps) => {   
-  const [isSelected , setIsSelected ] = useState(false);
-  console.log(isSelected,setIsSelected,'isSelected' , 'setSelected');
+const PlayerCard = ({ player , coin , setCoin , selectedPlayers , setSelectedPlayers}: 
+   PlayerCardProps) => {     
+    // console.log(selectedPlayers,setSelectedPlayers);
+  const [isSelected , setIsSelected ] = useState(false);  
+   const handleSelectetPlayer = () => { 
+    setIsSelected(true);
+    const newCoinPrise = coin - player.price;
+    if(newCoinPrise >= 0){ 
+      setCoin(newCoinPrise); 
+      // toast.success(` ${player.playerName} is purchase successfully.`)
+      toast.success(` ${player.playerName} is purchase successfully.`, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Bounce,
+          });
+    } 
+    else{ 
+      toast.error('Coin is not enought to purchase');
+    }  
+    setSelectedPlayers([...selectedPlayers,player]);
+    // console.log(setSelectedPlayers);
+   }
+  
+  // console.log(isSelected,setIsSelected,'isSelected' , 'setSelected');
   return (
     <article className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl">
 
@@ -129,13 +162,29 @@ const PlayerCard = ({ player }: PlayerCardProps) => {
             </p>
           </div>
 
-          <button
-            type="button"
-            className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-bold text-white shadow-sm transition-all duration-200 hover:bg-blue-700 active:scale-95"
+          {/* <button
+            // type="button" 
+            onClick={()=>setIsSelected(true)}
+            
+            className={`inline-flex shrink-0 items-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-bold text-white shadow-sm transition-all duration-200 hover:bg-blue-700 active:scale-95`}
+            disabled={isSelected ? true : false}
           >
-            Choose
+            {isSelected === true ? 'Selected' : 'Choose Player'}
             <FaArrowRight className="text-xs transition-transform group-hover:translate-x-1" />
-          </button>
+          </button> */}
+
+          <button
+  type="button" 
+  onClick={() => handleSelectetPlayer()}
+  className={`inline-flex shrink-0 items-center gap-2 rounded-xl px-4 py-3 text-sm font-bold shadow-sm transition-all duration-200 
+    ${isSelected 
+      ? 'bg-slate-300 text-slate-500 cursor-not-allowed' 
+      : 'bg-blue-600 text-white hover:bg-blue-700 active:scale-95'}`}
+  disabled={isSelected}
+>
+  {isSelected ? 'Selected' : 'Choose Player'}
+  <FaArrowRight className="text-xs transition-transform group-hover:translate-x-1" />
+</button>
         </div>
 
       </div>
