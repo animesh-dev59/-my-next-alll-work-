@@ -11,7 +11,7 @@ const playersFetch  = async():Promise<Iplayer[]>=>{
 function App() { 
   // console.log(playersPromise); 
   const playersPromise = playersFetch();
-  const [coin,setCoin] = useState(1500); 
+  const [coin,setCoin] = useState(2500); 
   // const [coin,setCoin] = useState(500);
 
   return (
