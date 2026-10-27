@@ -90,7 +90,7 @@ const PlayerCard = ({ player , coin , setCoin , selectedPlayers , setSelectedPla
           src={player.playerImg}
           alt={`${player.playerName} profile`}
           loading="lazy"
-          className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          className="h-full w-full  object-contain object-center transition-transform duration-500 group-hover:scale-105"
         />
 
         {/* Player Type Badge */}

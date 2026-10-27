@@ -19,7 +19,7 @@
   },
   {
     "playerName": "Babar Azam",
-    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYaour0jjq3EWLa1AqZk1rOtMpDelJ6Ym7RDSyR28mFg&s=10",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6JkRO_GWRV_3JMy6PsSmNapRrXecBEUm6uAGlHYYfQw&s=10",
     "origin": "Pakistan",
     "playerType": "Batsman",
     "battingStyle": "Right-hand bat",
@@ -28,7 +28,7 @@
   },
   {
     "playerName": "Ben Stokes",
-    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYaour0jjq3EWLa1AqZk1rOtMpDelJ6Ym7RDSyR28mFg&s=10",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWM1WVx1dT1prosEkza93gc7oL72OkdtN9ZyALqbbDbQ&s=10",
     "origin": "England",
     "playerType": "All-rounder",
     "battingStyle": "Left-hand bat",
@@ -37,7 +37,7 @@
   },
   {
     "playerName": "Rashid Khan",
-    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYaour0jjq3EWLa1AqZk1rOtMpDelJ6Ym7RDSyR28mFg&s=10",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTioqDUDFyh-FimUDZhYzE5MUlppgsjm6IHxD5sOeDTDg&s=10",
     "origin": "Afghanistan",
     "playerType": "Bowler",
     "battingStyle": "Right-hand bat",
@@ -46,7 +46,7 @@
   },
   {
     "playerName": "Jasprit Bumrah",
-    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYaour0jjq3EWLa1AqZk1rOtMpDelJ6Ym7RDSyR28mFg&s=10",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8nk7QhlXrawlpOImL88LHSw6gyo1OsQufLmEzB_gePg&s=10",
     "origin": "India",
     "playerType": "Bowler",
     "battingStyle": "Right-hand bat",
@@ -56,7 +56,7 @@
   {
     "playerName": "Steve Smith",
     "origin": "Australi",
-    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYaour0jjq3EWLa1AqZk1rOtMpDelJ6Ym7RDSyR28mFg&s=10",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnfZguBhA21oC-I1PcGh3noxLvWdy290dx8MsmD1ppg&s=10",
     "playerType": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
@@ -64,7 +64,7 @@
   },
   {
     "playerName": "Mustafizur Rahman",
-    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYaour0jjq3EWLa1AqZk1rOtMpDelJ6Ym7RDSyR28mFg&s=10",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7IKq3DPNlW9nTVQJgoQRX8wpLyWbe9olP5DSfuhL0Tw&s=10",
     "origin": "Bangladesh",
     "playerType": "Bowler",
     "battingStyle": "Left-hand bat",
@@ -73,7 +73,7 @@
   },
   {
     "playerName": "Kane Williamson",
-    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYaour0jjq3EWLa1AqZk1rOtMpDelJ6Ym7RDSyR28mFg&s=10",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZC4pWQcZzYovkqIH2gaCGDgT6ykxuFb3BAoSyzhZRdA&s=10",
     "origin": "New Zealand",
     "playerType": "Batsman",
     "battingStyle": "Right-hand bat",
@@ -82,7 +82,7 @@
   },
   {
     "playerName": "Kagiso Rabada",
-    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYaour0jjq3EWLa1AqZk1rOtMpDelJ6Ym7RDSyR28mFg&s=10",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_tv6velWN202PRbiz1Ga_zMMn_qnNPgb51uqBZMC5zQ&s=10",
     "origin": "South Africa",
     "playerType": "Bowler",
     "battingStyle": "Left-hand bat",
